@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pricing-card"
+    }
+  },
+  "defaultProject": "pricing-card",
+  "cli": {
+    "analytics": "54f92337-d4eb-476d-aa8d-f9958690a4ed"
+  }
 }
