@@ -1,0 +1,10 @@
+<div class="card">
+    <h3>{{data.heading}}</h3>
+    <p><span>{{data.amount}}</span>/month</p>
+    <hr>
+    <ul *ngFor = 'let listItem of data.list; let i=index'>
+        <li [ngClass]="{'text-muted': i > data.mute,
+            'highlight' : data.highlight.includes(i)}">{{listItem}}</li>
+    </ul>
+    <button>button</button>
+</div>

@@ -1,0 +1,65 @@
+.card {
+	text-align: center;
+	padding: 1rem 2rem;
+	border: 2px solid black;
+	border-radius: 2rem;
+	font-family: 'Nunito', sans-serif;
+	color: rgba(0, 0, 0, 0.788);
+	min-width: 300px;
+	margin-top: 1.5rem;
+	h3 {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: rgba(0, 0, 0, 0.452);
+	}
+	p {
+		font-weight: 400;
+		font-size: 1.2rem;
+		span {
+			font-weight: 700;
+			font-size: 4rem;
+		}
+	}
+	ul {
+		text-align: left;
+		list-style-type: none;
+		li {
+			position: relative;
+			font-size: 1.2rem;
+			text-transform: capitalize;
+			&::before {
+				content: '';
+				width: 0.8rem;
+				height: 0.8rem;
+				border-radius: 50%;
+				background-color: rgb(17, 248, 17);
+				position: absolute;
+				top: calc(30%);
+				left: -2rem;
+			}
+		}
+	}
+	button {
+		all: unset;
+		width: 80%;
+		text-align: center;
+		user-select: none;
+		font-size: 1.5rem;
+		background-color: rgba(0, 110, 255, 0.788);
+		border-radius: 2rem;
+		padding: 0.8rem 1.8rem;
+		color: white;
+		text-transform: capitalize;
+		cursor: pointer;
+	}
+}
+.text-muted {
+	color: rgba(0, 0, 0, 0.452) !important;
+	&::before {
+		background-color: rgb(148, 7, 7) !important;
+	}
+}
+.highlight {
+	font-weight: 700;
+	color: black !important;
+}
