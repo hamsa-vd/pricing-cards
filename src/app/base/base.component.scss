@@ -9,6 +9,7 @@
 	background-color: rgba(0, 0, 0, 0.007);
 	box-shadow: 12px 12px 20px 0px rgba(0, 0, 0, 0.25), -8px -8px 12px 0px rgba($color: white, $alpha: 0.3);
 	transition: transform 500ms ease-out;
+	user-select: none;
 	&:hover {
 		transform: translateY(-2rem);
 		cursor: pointer;
