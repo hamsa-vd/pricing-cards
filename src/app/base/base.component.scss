@@ -8,6 +8,11 @@
 	margin-top: 1.5rem;
 	background-color: rgba(0, 0, 0, 0.007);
 	box-shadow: 12px 12px 20px 0px rgba(0, 0, 0, 0.25), -8px -8px 12px 0px rgba($color: white, $alpha: 0.3);
+	transition: transform 500ms ease-out;
+	&:hover {
+		transform: translateY(-2rem);
+		cursor: pointer;
+	}
 	h3 {
 		text-transform: uppercase;
 		font-weight: bold;
@@ -54,6 +59,13 @@
 		text-transform: capitalize;
 		cursor: pointer;
 		box-shadow: 12px 12px 20px 0px rgba(0, 0, 0, 0.25), -8px -8px 12px 0px rgba($color: white, $alpha: 0.3);
+		transition: background 500ms ease-out;
+		&:hover {
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.164), rgba(0, 0, 0, 0.123));
+		}
+		&:active {
+			background: linear-gradient(-45deg, rgba(255, 255, 255, 0.171), rgba(0, 0, 0, 0.123));
+		}
 	}
 }
 .text-muted {
